@@ -1,0 +1,41 @@
+import React from "react";
+import { assets } from "../assets/assets";
+import { ArrowRight, CalendarIcon, ClockIcon } from "lucide-react";
+import { useNavigate } from 'react-router-dom'
+
+const HeroSection = () => {
+
+  const navigate = useNavigate()
+
+  return (
+    <div className='flex flex-col items-start justify-center gap-4 px-6 md:px-16 lg:px-36 bg-[url("/BackgroundImage.jpg")] 
+    bg-cover bg-center h-screen'>
+      
+      <img src={assets.logo} alt="" className="max-h-11 lg:h-11 mt-20" />
+      
+      <h1 className="text-5xl md:text-[70px] md:leading-[1.2] font-semibold max-w-[1100px] text-white">
+        He <br /> Who <span className="text-[#FF0000]">Matters</span>
+      </h1>
+
+      <div className="flex items-center gap-4 text-gray-300">
+        <span>Psychological Thriller | Found Footage | Suspense</span>
+        <div className="flex items-center gap-1">
+          <CalendarIcon className='w-4.5 h-4.5' /> 2025
+        </div>
+        <div className="flex items-center gap-1">
+          <ClockIcon className='w-4.5 h-4.5' /> 17m
+        </div>
+      </div>
+      <p className="max-w-md text-gray-300">In the ruins of a post-outbreak city, one man wanders through the last standing tower, 
+        searching for life-or whatever’s left of it. Told through found footage and cinematic realism, 'HE WHO MATTERS' grips you with tense 
+        silence, long takes, and a descent into the fragility of humanity.</p>
+      <button onClick={() => navigate('/movies')} className="flex items-center gap-1 px-6 py-3 text-sm bg-black text-white hover:bg-[#222222] transition rounded-full font-medium 
+        cursor-pointer shadow-md hover:shadow-lg active:scale-95">
+        Explore Motion-Pictures
+        <ArrowRight className="w-5 h-5"/>
+      </button>
+    </div>
+  );
+};
+
+export default HeroSection;

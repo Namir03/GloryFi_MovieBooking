@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import "tailwindcss";
+
+@layer theme {
+  :root {
+    color-scheme: light dark;
+    --color-primary: 248 69 101;
+    --color-primary-dull: 214 56 84;
+  }
+}
+
+*{
+  font-family: "Oswald", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #787777 #1e1e1e;
+}
+
+body{
+  color: white;
+  background-color: #1e1e1e;
+}
