@@ -1,9 +1,16 @@
-import React from "react";
+import React from 'react';
+import { dummyShowsData } from '../assets/assets'
+import MovieCard from '../components/MovieCard';
 
 const Movies = () => {
-  return (
+  return dummyShowsData.length > 0 ? (
     <div>
-        
+      <h1>Now Showing</h1>
+      <div> {dummyShowsData.map(() => (<MovieCard movie={movie} key={movie._id} />))} </div>
+    </div>
+  ) : (
+    <div>
+
     </div>
   )
 }
