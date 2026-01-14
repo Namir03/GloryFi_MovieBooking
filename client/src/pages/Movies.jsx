@@ -22,9 +22,11 @@ const Movies = () => {
 
       {/* Page Header */}
       <div className='mb-12'>
-        <h1 className='text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-white via-gray-200 to-gray-400 
-          bg-clip-text text-transparent'>
-          Now Showing
+        <h1 className='text-5xl md:text-6xl font-bold mb-4'>
+          <span className='text-[rgb(248_69_101)]'>Now</span>{' '}
+          <span className='bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent'>
+            Showing
+          </span>
         </h1>
         <p className='text-gray-400 text-lg'>Discover the latest blockbusters and timeless classics</p>
       </div>

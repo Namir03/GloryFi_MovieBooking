@@ -379,3 +379,42 @@ export const dummyBookingData = [
         "isPaid": true,
     },
 ]
+
+export const dummyTheatresData = [
+    {
+        "_id": "t1",
+        "name": "TCL Chinese Theatre",
+        "location": "Los Angeles, USA",
+        "image": "/theatres/tcl.png",
+        "description": "The world's most famous movie theatre, known for its Chinese architecture and the footprints of stars in its forecourt.",
+        "capacity": 932,
+        "features": ["IMAX", "Dolby Atmos", "Historic Landmark"]
+    },
+    {
+        "_id": "t2",
+        "name": "El Capitan Theatre",
+        "location": "Los Angeles, USA",
+        "image": "https://img.freepik.com/free-photo/hollywood-boulevard-la-usa_1409-5431.jpg",
+        "description": "Disney's premier movie palace, beautifully restored and featuring live stage shows and world premieres.",
+        "capacity": 1100,
+        "features": ["Stage Shows", "Digital 3D", "Disney Premieres"]
+    },
+    {
+        "_id": "t3",
+        "name": "Radio City Music Hall",
+        "location": "New York, USA",
+        "image": "/theatres/radiocity.png",
+        "description": "An iconic Art Deco theatre in Rockefeller Center, known as the 'Showplace of the Nation'.",
+        "capacity": 5960,
+        "features": ["Art Deco", "World Class Acoustics", "Landmark"]
+    },
+    {
+        "_id": "t5",
+        "name": "Le Grand Rex",
+        "location": "Paris, France",
+        "image": "https://img.freepik.com/free-photo/beautiful-view-eiffel-tower-sunset_268835-985.jpg",
+        "description": "The largest cinema in Europe, famous for its magnificent atmospheric decor and grand premieres.",
+        "capacity": 2800,
+        "features": ["Art Deco", "Atmospheric Theatre", "Water Screen"]
+    }
+]

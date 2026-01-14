@@ -140,22 +140,17 @@ const MovieDetails = () => {
         {/* Cast Section */}
         <div className="mb-16 animate-[fadeIn_1.2s_ease-in-out]">
           <h2 className="text-3xl font-bold mb-6">Cast</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
+          <div className="flex flex-wrap gap-3">
             {movie.casts.slice(0, 12).map((cast, index) => (
               <div
                 key={index}
-                className="group cursor-pointer"
+                className="px-4 py-2 bg-gray-800/50 border border-gray-700/50 rounded-full 
+                  hover:border-[rgb(248_69_101)] hover:bg-[rgb(248_69_101)]/10 
+                  transition-all duration-300 group cursor-default"
               >
-                <div className="relative overflow-hidden rounded-xl mb-3 aspect-[2/3]">
-                  <img
-                    src={cast.profile_path}
-                    alt={cast.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent 
-                    opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
-                <p className="text-sm font-medium text-center truncate">{cast.name}</p>
+                <span className="text-sm md:text-base font-medium text-gray-300 group-hover:text-white">
+                  {cast.name}
+                </span>
               </div>
             ))}
           </div>
